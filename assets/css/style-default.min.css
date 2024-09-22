@@ -7230,7 +7230,8 @@ button:hover:after {
 .lgx-header .menu-onscroll .lgx-nav-right .lgx-search,
 .lgx-header-position-white .lgx-nav-right .lgx-search a,
 .lgx-header-position-white .lgx-navbar .lgx-nav li a {
-    color: #fff
+    color: #ff0000;
+    font-weight: 500;
 }
 
 .lgx-header {
@@ -9101,7 +9102,7 @@ button:hover:after {
 }
 
 .lgx-about2 {
-    background: url(../img/about-bg.jpg) bottom no-repeat;
+    /* background: url(../img/vlogo.png) bottom no-repeat; */
     -webkit-background-size: auto auto, cover;
     -o-background-size: auto auto, cover;
     -moz-background-size: auto auto, cover;
@@ -10206,7 +10207,7 @@ button:hover:after {
 
 .lgx-panel .panel-body {
     padding: 0 2rem 2rem;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     display: block
 }
 
@@ -14108,4 +14109,11 @@ blockquote.lgx-testi-single:before {
     .lgxmapcanvas {
         height: 180px
     }
+}
+.form-group .error{
+    text-align: left;
+    color: red;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 0px 5px;
 }
