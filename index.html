@@ -47,6 +47,13 @@
 
     <!-- MODERNIZER CSS  -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+@media (max-width: 767px) {
+    .lgx-about-image-area {
+        text-align: center; /* Center the image on small screens */
+    }
+}
+    </style>
 </head>
 
 
@@ -82,10 +89,11 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse " style="margin-top:8px;">                       
                         <ul class="nav navbar-nav lgx-nav navbar-right" >
-                            <li><a href="index.html" >Home </a><li>
+                            <li><a class="lgx-scroll" href="index.html" >Home </a><li>
+                            <li><a class="lgx-scroll" href="#lgx-about">About</a></li>
                             <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>
-                            <li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>
-                            <li><a class="lgx-scroll" href="#lgx-registerinfo">Contact</a></li>
+                            <li><a class="lgx-scroll" href="#lgx-speakers">Members</a></li>
+                            <li><a class="lgx-scroll" href="#lgx-registerinfo">Register</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </nav>
@@ -107,9 +115,9 @@
                         <div class="col-xs-12">
                             <div class="lgx-banner-info lgx-banner-info-center"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
                                 <h3 class="subtitle">K.L.N College Of Engineering</h3>
-                                <h1><span id="lgx-typed-string">UX Conference 2021</span></h1><br>
+                                <h1><span id="lgx-typed-string">Vyuham'24</span></h1><br>
                                 <h3 class="location" style="color: black;"><i class="fa fa-map-marker"></i>&nbsp;47c, Pottapalaiyam, Tamil Nadu 630612.</h3>
-                                <h3 class="date" style="color: black;"><i class="fa fa-calendar"></i> 18 october, 2024</h3>
+                                <h3 class="date" style="color: black;"><i class="fa fa-calendar"></i> 18<sup>th</sup> october, 2024</h3>
                                 <div class="action-area">
                                     <div class="lgx-video-area">
                                         <a class="lgx-btn lgx-btn-red lgx-scroll" href="#lgx-registerinfo">Register Now</a>
@@ -149,20 +157,28 @@
 
 
     <!--ABOUT-->
-    <section>
+    <section >
         <div id="lgx-about" class="lgx-about lgx-about2">
             <div class="lgx-inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-offset-5 col-sm-12 col-md-7">
+                        <!-- Left Side: Image -->
+                        <div class="col-md-5 col-sm-12" style="position: relative;bottom: 50px;">
+                            <div class="lgx-about-image-area">
+                                <img src="assets/img/vlogo.png" height="400px" alt="VYUHAM '24" class="img-fluid">
+                            </div>
+                        </div>
+    
+                        <!-- Right Side: Content -->
+                        <div class="col-md-7 col-sm-12">
                             <div class="lgx-about-content-area">
                                 <div class="lgx-heading">
-                                    <h2 class="heading">Happy New Year 2021</h2>
-                                    <h3 class="subheading">Why Happy New Year 2021 ?</h3>
+                                    <h2 class="heading">Vyuham'24</h2>
+                                    <h3 class="subheading">Organized by MCA Department</h3>
                                 </div>
                                 <div class="lgx-about-content">
                                     <p class="text">
-                                        Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are ultricies mi senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae vitae.
+                                        We are pleased to announce that our college will be hosting the State-Level Technical Symposium, "VYUHAM '24," on 18th October 2024. This event aims to provide an excellent platform for undergraduate students from various academic institutions to exchange ideas, explore innovative concepts, and enhance their knowledge. We look forward to your participation and contribution to making this symposium a grand success!
                                     </p>
                                     <div class="section-btn-area">
                                         <a class="lgx-btn lgx-btn-red lgx-scroll" href="#lgx-registerinfo">Register</a>
@@ -175,7 +191,7 @@
             </div><!-- //.INNER -->
         </div>
     </section>
-    <!--ABOUT END-->
+   
 
 <!--SCHEDULE-->
 <section>
@@ -185,8 +201,8 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="lgx-heading lgx-heading-white">
-                            <h2 class="heading">Event Schedule</h2>
-                            <h3 class="subheading">Welcome to the dedicated to building remarkable Schedule!</h3>
+                            <h2 class="heading">Events Schedule</h2>
+                            <h3 class="subheading">Please ensure to carefully read the instructions for each event!</h3>
                         </div>
                     </div>
                 </div>
@@ -194,10 +210,10 @@
                     <div class="col-xs-12">
                         <div class="lgx-tab">
                             <ul class="nav nav-pills lgx-nav">  <!--lgx-nav-nogap lgx-nav-colorful-->
-                                <li class="active"><a data-toggle="pill" href="#home"><h3>First <span>Day</span></h3> <p><span>29 </span>Nov, 2021</p></a></li>
-                                <li><a data-toggle="pill" href="#menu1"><h3>Second <span>Day</span></h3> <p><span>28 </span>Jul, 2021</p></a></li>
-                                <li><a data-toggle="pill" href="#menu2"><h3>Third <span>Day</span></h3> <p><span>29 </span>Nov, 2021</p></a></li>
-                                <li><a data-toggle="pill" href="#menu3"><h3>Fourth <span>Day</span></h3> <p><span>30 </span>Dec, 2021</p></a></li>
+                                <li class="active"><a data-toggle="pill" href="#home"><h3>Technical <span>Events</span></h3> <p><span>Time : </span>Forenoon</p></a></li>
+                                <li><a data-toggle="pill" href="#menu1"><h3>Non Technical <span>Events</span></h3> <p><span>Time : </span>Afternoon</p></a></li>
+                                <!-- <li><a data-toggle="pill" href="#menu2"><h3>Third <span>Day</span></h3> <p><span>29 </span>Nov, 2021</p></a></li>
+                                <li><a data-toggle="pill" href="#menu3"><h3>Fourth <span>Day</span></h3> <p><span>30 </span>Dec, 2021</p></a></li> -->
                             </ul>
                             <div class="tab-content lgx-tab-content">
 
@@ -211,12 +227,12 @@
                                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                         <div class="lgx-single-schedule">
                                                             <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
+                                                                <img src="assets/img/schedule/quiz.jpg" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Wait is Over! Stony Brook Captures Conference</h3>
-                                                                <h4 class="author-info">By <span>Riaz Sagar</span> , Logichunt Inc.</h4>
+                                                                <h3 class="title">Quiz</h3>
+                                                                <!-- <h4 class="author-info">By <span>Kumersh Babu, Arun Babu</span></h4> -->
                                                             </div>
                                                         </div>
                                                     </a>
@@ -224,10 +240,16 @@
                                             </div>
                                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                    <ul class="text">
+                                                        <li>A team must have two participants.(Either two boys or two girls)</li>
+                                                        <li>Each member of a participating team is required to individually pay a registration fee of ₹200. The payment must be made by each participant separately during the registration process (i.e., one by one). </li>
+                                                        <li>Please ensure that all team members complete their individual payments to confirm their participation in the event.</li>
+                                                        <li>3 rounds will be conducted offline at a convenient time.(Prelims 1, Prelims 2, and Final)</li>
+                                                        <li>All participants must follow the guidelines, and their activities will be monitored.</li>
+                                                        <li>If any participants commit malpractice, that team will be disqualified.</li>
+                                                    </ul>
+                                                    <h4 class="location"><strong>Venue : </strong>MCA Class Room</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -237,12 +259,12 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                                         <div class="lgx-single-schedule">
                                                             <div class="author">
-                                                                <img src="assets/img/schedule/speaker2.jpg" alt="Speaker"/>
+                                                                <img src="assets/img/schedule/pres.jpg" height="100px" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">10:30 <span>Am</span> - 11.30 <span>Am</span></h4>
-                                                                <h3 class="title">Team With At Least Three Conference Titles</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
+                                                                <h3 class="title">Paper Presentation</h3>
+                                                                <h4 class="author-info"></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -250,10 +272,21 @@
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                    <h4>Topics : Crypto currency and Bitcoin, Augmented reality vs Virtual reality, Impact of AI</h4>
+                                                <ul class="text">
+                                                    <li>Each member of a participating team is required to individually pay a registration fee of ₹200. The payment must be made by each participant separately during the registration process (i.e., one by one). </li>
+                                                    <li>Please ensure that all team members complete their individual payments to confirm their participation in the event.</li>
+                                                    <li>Participant have to speak for a minimum of 5 minutes and a maximum of 10 minutes </li>
+                                                    <li>Topic can be chosen from the given topics only</li>
+                                                    <li>PPT presentation is a must one</li>
+                                                    <li>PPT can have 7 slides minimum to maximum 15 slides</li>
+                                                    <li>PPT should contain the participant's name, college me,topic chosen </li>
+                                                    <li>All the candidates are requested to arrive on or before 11.20 at pg conference hall</li>
+                                                    <li>Share your ppt on ymposiumviyugam@gmail.com</li>
+                                                    <li>Questions will be asked and marks will be provided by judges (questions are related to your chosen topic only)</li>
+                                                  </ul>
+                                                    <h4 class="location"><strong>Venue : </strong> PG Conference Hall</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,16 +295,13 @@
                                                 <div class="panel-title">
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                                         <div class="lgx-single-schedule">
-                                                            <div class="author author-multi">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                                <img src="assets/img/schedule/speaker2.jpg" alt="Speaker"/>
-                                                                <img src="assets/img/schedule/speaker3.jpg" alt="Speaker"/>
-                                                                <img src="assets/img/schedule/speaker4.jpg" alt="Speaker"/>
+                                                            <div class="author">
+                                                                <img src="assets/img/schedule/debug.jpg" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">11:30 <span>Am</span> - 01.30 <span>Pm</span></h4>
-                                                                <h3 class="title">Building an Awesome Community on Your Website</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , <span>Riaz Sagar</span> & <span>Devid Smith</span> , Design Apple</h4>
+                                                                <h3 class="title">Debugging Using Java</h3>
+                                                                <h4 class="author-info"></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -279,67 +309,22 @@
                                             </div>
                                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                    <ul class="text">
+                                                        <li>Each team must consist of only 1 member. No team-based participation is allowed.</li>
+                                                        <li>The total time allocated for this round will be 1 hour. Participants must complete their tasks within this time limit.</li>
+                                                        <li>You will be provided with a set of programs that contain both syntactical and logical errors. Your task is not to rewrite the entire code from scratch but to modify and correct the logic as per the given requirements. Focus on fixing the existing code rather than reconstructing it entirely.</li>
+                                                        <li>You are not allowed to display the output using simple print statements (e.g., System.out.println). The output must be displayed according to the specified instructions provided during the event.</li>
+                                                        <li>A total of 10 programs will be provided. Each program will contain errors, and your goal will be to identify and fix those errors.</li>
+                                                        <li>The participant who completes all 10 programs within the allotted time and finishes first among the other participants will be declared the winner. Other participants will be ranked based on the number of programs completed and the time taken to complete them.</li>
+                                                        <li>Internet access will not be provided, and the use of mobile phones or any other electronic devices is strictly prohibited during the event. Ensure that you are prepared to solve the problems without external assistance.</li>
+                                                        <li>Any participant found using unfair means, such as cheating or attempting to bypass the rules, will be immediately disqualified from the event. Please maintain the integrity of the competition.</li>
+                                                    </ul>
+                                                    <h4 class="location"><strong>Venue : </strong>MCA Lab 2</h4>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfour">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker4.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Am</span> - 03.30 <span>Pm</span></h4>
-                                                                <h3 class="title">Hungry Shawnee boys soccer team eyeing conference, sectional title in 2021</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfive">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker5.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">03:45 <span>Am</span> - 04.00 <span>Pm</span></h4>
-                                                                <h3 class="title">Business World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div>                                
                                     </div>
-
                                 </div>
 
 
@@ -351,15 +336,14 @@
                                                 <div class="panel-title">
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
                                                         <div class="lgx-single-schedule">
-                                                            <div class="author author-multi">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                                <img src="assets/img/schedule/speaker2.jpg" alt="Speaker"/>
-                                                                <img src="assets/img/schedule/speaker3.jpg" alt="Speaker"/>
+                                                            <div class="author">
+                                                                <img src="assets/img/schedule/[freepicdownloader.com]-mobile-application-testing-connection-two-pieces-puzzle-ux-ui-design-development-concept-medium.jpg" alt="Speaker"/>
+                                                                <!-- <img src="assets/img/schedule/speaker3.jpg" alt="Speaker"/> -->
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">The Wait is Over! Stony Brook Captures First Conference Title</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , <span>Riaz Sagar</span> & <span>Devid Smith</span> , Design Apple</h4>
+                                                                <h3 class="title">Connection</h3>
+                                                                <h4 class="author-info"></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -367,10 +351,19 @@
                                             </div>
                                             <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                    <ul class="text">
+                                                        <li>Each team is allowed to have two members. </li>
+                                                        <li>Each member of a participating team is required to individually pay a registration fee of ₹200. The payment must be made by each participant separately during the registration process (i.e., one by one). </li>
+                                                        <li>Please ensure that all team members complete their individual payments to confirm their participation in the event.</li>
+                                                        <li>In the first round, 15 pictures will be shown to the participants with 15 </li>
+                                                        <li>Seconds given to guess the answer for each question. </li>
+                                                        <li>Priority will be given to those who raise their hands first to answer. </li>
+                                                        <li>If the answer is incorrect, the chance will be given to the next team. </li>
+                                                        <li>Participants with the highest score will be selected for the next round. </li>
+                                                        <li>Finally, the judges will determine the winners.</li>
+                                                    </ul>
+                                                    <h4 class="location"><strong>Venue:</strong> PG Conference Hall</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -380,12 +373,12 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
                                                         <div class="lgx-single-schedule">
                                                             <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
+                                                                <img src="assets/img/schedule/[freepicdownloader.com]-group-women-dancing-bollywood-large.jpg" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
+                                                                <h3 class="title">As you Like It</h3>
+                                                                <h4 class="author-info"></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -393,10 +386,17 @@
                                             </div>
                                             <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                        <ul class="text">
+                                                            <li>The time duration for the individual and group dance is 5 minutes.</li>
+                                                            <li>Maximum five members are allowed to participate in the group dance. </li>
+                                                            <li>Each member of a participating team is required to individually pay a registration fee of ₹200. The payment must be made by each participant separately during the registration process (i.e., one by one). </li>
+                                                            <li>Please ensure that all team members complete their individual payments to confirm their participation in the event.</li>
+                                                            <li>The time duration for singing is between three or four minutes. </li>
+                                                            <li>Participations are responsible for providing their own dance audio and karaoke for singing. </li>
+                                                            <li>Students are advised to choose therir dance costumes appropriately.</li>
+                                                        </ul>
+                                                    <h4 class="location"><strong>Venue : </strong>PG Conference Hall</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -406,12 +406,12 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
                                                         <div class="lgx-single-schedule">
                                                             <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
+                                                                <img src="assets/img/schedule/[freepicdownloader.com]-treasure-chest-fantasy-landscape-illustration-large.jpg" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
+                                                                <h3 class="title">Treasure Hunt</h3>
+                                                                <h4 class="author-info"></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -419,182 +419,16 @@
                                             </div>
                                             <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                 <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div id="menu2" class="tab-pane fade">
-
-                                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingOne3">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingTwo3">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo3" aria-expanded="true" aria-controls="collapseTwo3">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree3">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div id="menu3" class="tab-pane fade">
-
-                                    <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingOne4">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingTwo4">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo4" aria-expanded="true" aria-controls="collapseTwo4">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseTwo4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo4">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree4">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseThree4" aria-expanded="true" aria-controls="collapseThree4">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="author">
-                                                                <img src="assets/img/schedule/speaker1.jpg" alt="Speaker"/>
-                                                            </div>
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree4">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                                    <h3 style="margin: 0;">Instruction</h3>
+                                                    <ul class="text">
+                                                        <li>Each team is allowed to have two members. </li>
+                                                        <li>Each member of a participating team is required to individually pay a registration fee of ₹200. The payment must be made by each participant separately during the registration process (i.e., one by one). </li>
+                                                        <li>Please ensure that all team members complete their individual payments to confirm their participation in the event.</li>
+                                                        <li>Participants can search for the treasure together with their team members. </li>
+                                                        <li>The questions will be presented in the form of riddles to lead you to find the treasures.</li>
+                                                        <li>Participants who find the treasures first will have the opportunity to the final round.</li>
+                                                    </ul>
+                                                    <h4 class="location"><strong>Venue : </strong> MCA Department</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -614,109 +448,107 @@
 </section>
 <!--SCHEDULE END-->
 
-
-
-<!--SPONSORED-->
 <section>
-    <div id="lgx-sponsors" class="lgx-sponsors">
-        <div class="lgx-inner-bg">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading">
-                                <h2 class="heading">Offcial Sponsonrs</h2>
-                                <h3 class="subheading">Welcome to the dedicated to building remarkable Sponsores!</h3>
-                            </div>
+    <div id="lgx-speakers" class="lgx-speakers" style="background-color: #ec398adf;">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading" style="color: white;">EITA Members</h2>
+                            <!-- <h3 class="subheading">Welcome to the dedicated to building remarkable Speakers!</h3> -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="sponsors-area">
-                                <div class="single">
-                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor1.png" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor2.png" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor3.png" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor4.png" alt="sponsor"/></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    
                 </div>
-                <!--//container-->
+                <!--//.ROW-->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Mr.GH.Avinesh</h3>
+                                        <h4 class="subtitle">President Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Mr. A.Surya Pandian</h3>
+                                        <h4 class="subtitle">Vice President Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Ms.R.Lakshmi</h3>
+                                        <h4 class="subtitle">Secretary Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Ms.S.Jeyamaha Lakshmi</h3>
+                                        <h4 class="subtitle">Join-Secretary Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Ms.B.N.Thanusha</h3>
+                                        <h4 class="subtitle">Treasurer Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="lgx-single-speaker lgx-single-speaker-circle">
+                            <figure>
+                                <img class="profile-img" src="assets/img/speaker2.jpg" alt="speaker"/>
+                                <figcaption>
+                                    <div class="speaker-info">
+                                        <h3 class="title">Mr.KT.Karthikeyan</h3>
+                                        <h4 class="subtitle">Co-Treasurer Of Vyuham</h4>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
             </div>
+            <!-- //.CONTAINER -->
         </div>
-        <!--//lgx-inner-->
+        <!-- //.INNER -->
     </div>
 </section>
-<!--SPONSORED END-->
-
-
-
-
-
     <!--REGISTRATION-->
-    <section>
-        <div id="lgx-registration" class="lgx-registration"> <!--lgx-registration2 lgx-registration3 lgx-registration4-->
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-registration-area"> <!--lgx-registration-area2 lgx-registration-area3 "-->
-                                <div class="lgx-single-registration recommended">
-                                    <div class="lgx-single-registration-inner">
-                                        <div class="single-top">
-                                            <h3 class="title">Business</h3>
-                                            <h4 class="price"><i>$</i>89<span>/Month</span></h4>
-                                        </div>
-                                        <div class="single-bottom">
-                                            <ul class="list-unstyled list">
-                                                <li>Unlimited Entrance</li>
-                                                <li>Comfortable Seat</li>
-                                                <li>Coffee Break</li>
-                                                <li>One Workshop</li>
-                                                <li>Certificate</li>
-                                            </ul>
-                                            <a class="lgx-btn" href="#lgx-registerinfo"><span>Register here</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lgx-single-registration  recommended">
-                                    <div class="lgx-single-registration-inner">
-                                        <div class="single-top">
-                                            <h3 class="title">Premium</h3>
-                                            <h4 class="price"><i>$</i>99<span>/Month</span></h4>
-                                        </div>
-                                        <div class="single-bottom">
-                                            <ul class="list-unstyled list">
-                                                <li>Unlimited Entrance</li>
-                                                <li>Comfortable Seat</li>
-                                                <li>Coffee Break</li>
-                                                <li>One Workshop</li>
-                                                <li>Certificate</li>
-                                            </ul>
-                                            <a class="lgx-btn" href="#lgx-registerinfo"><span>Register Here</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- //.CONTAINER -->
-            </div><!-- //.INNER -->
-        </div>
-    </section>
-    <!--REGISTRATION END-->
-    <!--TRAVEL INFO-->
     <section>
         <div id="lgx-registerinfo" class="lgx-registerinfo">
             <div class="lgx-inner">
@@ -728,78 +560,73 @@
                             </div>
                         </div>
                     </div>
+                    <div class="alert" style=" margin-top: 15px;background-color: #ef2e2e;color: white;">
+                            <strong>Note!</strong> A participant can participate in only one technical event. However, they can participate in both technical and non-technical events. If a participant attempts to register for more than one event in the same category (technical or non-technical), their registration will be rejected.
+                          </div>
                     <div class="col-sm-12 col-md-6 col-md-offset-3"></div>
                        
-                        <form method="POST" class="lgx-contactform" action="">
+                        <form method="post" name="reg-form" class="lgx-contactform" id="regForm" action="">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control name" id="name" placeholder="Enter Your Name" required>
+                                <input type="text" name="Name" pattern="^[A-Za-zÀ-ÿ' ]+$" title="Name must only contain letters, spaces, or apostrophes." class="form-control Name" id="Name" placeholder="Enter Your Name" >
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="cname" class="form-control cname" id="cname" placeholder="Enter Your College Name" required>
+                                <input type="text" name="College_Name" pattern="^[A-Za-zÀ-ÿ'. ]+$" title="College Name must only contain letters, spaces, or apostrophes." class="form-control College_Name" id="College_Name" placeholder="Enter Your College Name" >
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="dept" class="form-control dept" id="dept" placeholder="Enter Your Department" required>
+                                <input type="text" name="Department" class="form-control Department" id="Department" placeholder="Enter Your Department" >
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control email" id="email" placeholder="Enter email" required>
+                                <input type="email" name="Mail_Id" class="form-control Mail-Id" id="Mail-Id" placeholder="Enter email" >
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="number" name="contact" maxlength="10"  minlength="10"  class="form-control contact" id="contact" placeholder="Enter Mobile No" required>
+                                <input type="number" name="Contact" minlength="10" maxlength="10" class="form-control Contact" id="Contact" placeholder="Enter Mobile No"  >
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <select name="tech" class="form-control tech" id="tech" required>
+                                <select name="Technical" class="form-control Technical" id="Technical" >
                                     <option value="" selected disabled hidden>Select Technical Event</option>
-                                    <option value ="None">None</option>
-                                    <option value ="Debugging">Debugging</option>
-                                    <option value ="Paper_presentation">Paper Presentation</option>
-                                    <option value ="Quiz">Quiz</option>
+                                    <option  name="Technical"value ="None">None</option>
+                                    <option  name="Technical"value ="Debugging">Debugging</option>
+                                    <option  name="Technical"value ="Paper_presentation">Paper Presentation</option>
+                                    <option  name="Technical"value ="Quiz">Quiz</option>
                                 </select>
+                                <div class="error text-danger"></div>
                             </div>
                             
                             <div class="form-group">
-                                <select name="non-tech" class="form-control non-tech" id="non-tech" required>
+                                <select name="Non-Technical" class="form-control Non-Technical" id="Non_Technical" >
                                     <option value="" selected disabled hidden>Select Non-Technical Event</option>
-                                    <option value ="None">None</option>
-                                    <option value ="Connection">Connection</option>
-                                    <option value ="Dance">Dance</option>
-                                    <option value ="Singing">Singing</option>
-                                    <option value ="Treasure_Hunt">Treasure Hunt</option>
-                                    <option value ="As_you_like_it">As You Like It</option>
+                                    <option name="Non-Technical" value ="None">None</option>
+                                    <option name="Non-Technical" value ="Connection">Connection</option>
+                                    <option name="Non-Technical" value ="Treasure_Hunt">Treasure Hunt</option>
+                                    <option name="Non-Technical" value ="As_you_like_it">As You Like It (Singing & Dance)</option>
                                 </select>
+                                <div class="error text-danger"></div>
                             </div>
 
                             <div class="form-group">
-                                <img src="assets/img/qrcode.jpeg" alt="upi-transaction"  style="" class="responsive">
+                                <img src="assets/img/qrcode.jpeg" height="400px" alt="upi-transaction" class="responsive">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="transaction_ID" class="form-control transaction_ID" id="transaction_ID" placeholder="Enter your Transaction_ID" required>
+                                <input type="number" name="Transaction_ID"  class="form-control Transaction_ID" id="Transaction_ID" placeholder="Enter your UPI Transaction_ID">
+                                <div class="error text-danger"></div>
                             </div>
-                            <button type="submit" name="submit" value="contact-form" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Submit</span></button>
+                            <div class="alert" style=" margin-top: 15px;
+                            background-color: #f1a32d;
+                            color: white;">
+                                <strong>Remainder!</strong> Please share your payment proof screenshot to the following WhatsApp number: 9092805318. If you have any questions or need assistance, feel free to contact this number and Please make sure to include your name in the payment note, as provided in the registration form.
+                            </div>
+                            <button type="submit" name="submit" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Submit</span></button>
                         </form>
-
-                        <!-- MODAL SECTION -->
-                        <div id="lgx-form-modal" class="modal fade lgx-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content lgx-modal-content">
-                                    <div class="modal-header lgx-modal-header">
-                                        <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
-                                            <i class="fa fa-power-off"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <div class="alert lgx-form-msg" role="alert"></div>
-                                    </div> <!--//MODAL BODY-->
-
-                                </div>
-                            </div>
-                        </div> <!-- //MODAL -->
-
                     </div>
                 </div>
                 <!-- //.CONTAINER -->
@@ -825,17 +652,22 @@
                     <div class="lgx-footer-single">
                         <h3 class="footer-title">Venue Location </h3>
                         <h4 class="date">
-                            18 October, 2024
+                           MCA Department
                         </h4>
                         <address>
-                            47c, Pottapalaiyam, Tamil Nadu 630612
+                            K.L.N. College of Engineering, 47c, Pottapalaiyam, Tamil Nadu 630612
                         </address>
-                        <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" class="map-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> View Map location</a>
+                        <div>
+                            <h4 style="color: aliceblue;">CONTACT US : <br><br>MR.G.H.AVINESH, Cell No: +91 90870 13160</h4>
+                            <h4 style="color: aliceblue;">MR.A.SURYA PANDIAN, Cell No: +91 7339110117</h4>
+                            <h4 style="color: aliceblue;">MR.M.R.RISHI KUMAR, Cell No: +91 9092805318</h4>
+                        </div>
+                        <!-- <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" class="map-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> View Map location</a> -->
                     </div>
                     
                 </div>
                 <!-- Modal-->
-                <div id="lgx-modal-map" class="modal fade lgx-modal">
+                <!-- <div id="lgx-modal-map" class="modal fade lgx-modal">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -846,13 +678,13 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- //.Modal-->
+                </div> //.Modal -->
 
-                <!-- <div class="lgx-footer-bottom">
+                <div class="lgx-footer-bottom">
                     <div class="lgx-copyright">
-                        <p> <span>©</span> 2021 Emeet is powered by <a href="http://www.themearth.com/">themearth.</a> The property of their owners.</p>
+                        <p> <span>©</span>This website is developed by Ramji T.S, Dinesh Babu K.B</p>
                     </div>
-                </div> -->
+                </div>
 
             </div>
             <!-- //.CONTAINER -->
@@ -867,6 +699,7 @@
 <!--//.LGX SITE CONTAINER-->
 <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
 <!-- JQUERY  -->
+ <script src="assets/js/form_validate.js"></script>
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
 <!-- BOOTSTRAP JS  -->
