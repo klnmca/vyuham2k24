@@ -101,10 +101,6 @@ function validateInputs(){
         success = false;
         setError(tid, 'Transaction ID is required');
     }
-     else if (tidVal.length < 12 || tidVal.length > 12 ) {
-        success = false;
-        setError(tid, 'Invalid Transaction ID format, it contains 12 digits');
-    }
     else{
         setSuccess(tid);
     }
@@ -129,3 +125,38 @@ const validateEmail = (email) => {
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         );
 };
+
+// Disable right-click
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+// Disable F12 and developer tools
+document.addEventListener('keydown', function(event) {
+    // F12 key
+    if (event.keyCode == 123) {
+        event.preventDefault();
+    }
+    // Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U (view source)
+    if ((event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) || 
+        (event.ctrlKey && event.keyCode == 85)) {
+        event.preventDefault();
+    }
+});
+
+// Prevent print screen by blurring content
+document.addEventListener('keyup', function(event) {
+    if (event.key === "PrintScreen") {
+        alert("Screenshots are not allowed!");
+        document.body.style.filter = "blur(10px)";
+        setTimeout(() => {
+            document.body.style.filter = "none";
+        }, 1000);
+    }
+});
+
+// Disable copying with JavaScript
+document.addEventListener('copy', function(event) {
+    event.preventDefault();
+    alert("Copying text is not allowed!");
+});
