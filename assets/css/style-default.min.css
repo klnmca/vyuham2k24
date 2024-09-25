@@ -7441,7 +7441,7 @@ button:hover:after {
     .lgx-header .lgx-navbar .lgx-nav li a,
     .lgx-header .menu-onscroll .lgx-navbar .lgx-nav li a {
         font-size: 12px;
-        padding: 30px 5px
+        padding: 15px 5px
     }
 
     .lgx-header .lgx-nav-right,
@@ -9391,7 +9391,7 @@ button:hover:after {
 
 .lgx-single-speaker {
     background: #fff;
-    padding: 1.6rem;
+    padding: 10px;
     border-radius: 16px;
     margin-bottom: 2.6rem;
     -moz-transition-duration: .3s;
@@ -13907,7 +13907,7 @@ blockquote.lgx-testi-single:before {
     }
 
     .lgx-inner {
-        padding: 8rem 0
+        /* padding:  1rem; */
     }
 
     .lgx-countdowns4 .lgx-inner {

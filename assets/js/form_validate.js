@@ -8,6 +8,8 @@ const contact = document.getElementById('Contact');
 const tech = document.getElementById('Technical');
 const nontech = document.getElementById('Non_Technical');
 const tid = document.getElementById('Transaction_ID');
+//const tt = document.getElementById('Tech_Team_Name');
+// const ntt = document.getElementById('Non_Tech_Team_Name');
 
 form.addEventListener('submit',(e)=> {
     if(!validateInputs()){
@@ -30,6 +32,10 @@ function validateInputs(){
     const techVal=tech.value.trim();
     const nontechVal=nontech.value.trim();
     const tidVal=tid.value.trim();
+
+    //const ttVal = tt.value.trim();
+    // const nontechteamVal = nonteam_team.value.trim();
+
     let success = true;
 
     if(usernameVal===''){
@@ -105,6 +111,22 @@ function validateInputs(){
         setSuccess(tid);
     }
 
+
+    // if (ttVal === '') {
+    //     success = false;
+    //     setError(tt, 'Team Name is required');
+    // }
+    // else{
+    //     setSuccess(tt);
+    // }
+    // if (nontechteamVal === '') {
+    //     success = false;
+    //     setError(nonteam_team, 'Team Name is required');
+    // }
+    // else{
+    //     setSuccess(nonteam_team);
+    // }
+
     return success;
 }
 function setError(element,message){
@@ -125,6 +147,81 @@ const validateEmail = (email) => {
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         );
 };
+
+
+//extra field for tech team
+let techParentEle = document.querySelector('.tech');
+let nonTechParentEle = document.querySelector('.nonTech');
+
+function techTeamField() {
+    let x = document.getElementById('Technical').value;
+
+    if (x == 'Quiz') {
+
+        let removeEle = document.querySelector('.tech');
+        while (removeEle.hasChildNodes()) {
+            removeEle.removeChild(removeEle.firstChild);
+        }
+
+        let createInputBox = document.createElement('input');
+        let createDiv = document.createElement('div');
+        createInputBox.name = "Tech_Team_Name";
+        createInputBox.className = "form-control Name";
+        createInputBox.id = "Tech_Team_Name";
+        createInputBox.placeholder = "Enter your team name for Technical event (Alphabets only Allowed)";
+        createDiv.className = "error text-danger";
+        createInputBox.minLength = 5;
+        createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
+        createInputBox.title="Team Name must only contain letters, spaces, or apostrophes.";
+        createInputBox.required = true;
+        techParentEle.appendChild(createInputBox);
+        techParentEle.appendChild(createDiv);
+        
+        
+    }
+    else if ((x == 'None') || (x == 'Debugging') || (x == 'Paper_presentation')) {
+        let removeEle = document.querySelector('.tech');
+        while (removeEle.hasChildNodes()) {
+            removeEle.removeChild(removeEle.firstChild);
+        }
+    }
+    
+
+}
+
+//extra field for non-tech
+function nonTechTeamField() {
+    let y = document.getElementById('Non_Technical').value;
+
+    if ((y == 'Connection') || (y == 'Treasure_Hunt') || (y == 'As_you_like_it')) {
+        let removeEle = document.querySelector('.nonTech');
+        while (removeEle.hasChildNodes()) {
+            removeEle.removeChild(removeEle.firstChild);
+        }
+
+        let createInputBox = document.createElement('input');
+        let createDiv = document.createElement('div');
+        createInputBox.name = "Non_Tech_Team_Name";
+        createInputBox.className = "form-control Name";
+        createInputBox.id = "Non_Tech_Team_Name";
+        createInputBox.placeholder = "Enter your team name for Non-Technical event (Alphabets only Allowed)";
+        createDiv.className = "error text-danger";
+        createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
+        createInputBox.title="Team Name must only contain letters, spaces, or apostrophes.";
+        createInputBox.minLength = 5;
+        createInputBox.required = true;
+        nonTechParentEle.appendChild(createInputBox);
+        nonTechParentEle.appendChild(createDiv);
+      
+    }
+   
+    else if ((y == 'None')) {
+        let removeEle = document.querySelector('.nonTech');
+        while (removeEle.hasChildNodes()) {
+            removeEle.removeChild(removeEle.firstChild);
+        }
+    }
+}
 
 // Disable right-click
 document.addEventListener('contextmenu', function(event) {
