@@ -107,6 +107,11 @@ function validateInputs(){
         success = false;
         setError(tid, 'Transaction ID is required');
     }
+    else if(tidVal.length <= 11){
+        success = false;
+        setError(tid, 'Enter valid UPI transaction ID');
+    }
+    
     else{
         setSuccess(tid);
     }
