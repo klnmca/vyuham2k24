@@ -8,21 +8,59 @@ const contact = document.getElementById('Contact');
 const tech = document.getElementById('Technical');
 const nontech = document.getElementById('Non_Technical');
 const tid = document.getElementById('Transaction_ID');
+const loader = document.getElementById('loader');
 //const tt = document.getElementById('Tech_Team_Name');
 // const ntt = document.getElementById('Non_Tech_Team_Name');
 
-form.addEventListener('submit',(e)=> {
-    if(!validateInputs()){
+// form.addEventListener('submit',(e)=> {
+//     if(!validateInputs()){
+//         e.preventDefault();
+//     }
+//     else{
+//     e.preventDefault()
+//     fetch(scriptURL, {method : 'POST', body : new FormData(form)})
+//     .then(response =>alert("Thank You! your form is submitted Successfully"))
+//     .then(()=>{window.location.reload();})
+//     .catch(error => console.error('Error!', error.message))
+//     }
+// })
+form.addEventListener('submit', (e) => {
+    if (!validateInputs()) {
         e.preventDefault();
+    } else {
+        e.preventDefault();
+        // Show loading animation
+        showLoader();
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json(); // Assuming the server responds with JSON
+            })
+            .then(() => {
+                alert("Thank You! Your form has been submitted successfully.");
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert("There was an error submitting your form. Please try again.");
+            })
+            .finally(() => {
+                // Hide loading animation if needed
+                hideLoader();
+            });
     }
-    else{
-    e.preventDefault()
-    fetch(scriptURL, {method : 'POST', body : new FormData(form)})
-    .then(response =>alert("Thank You! your form is submitted Successfully"))
-    .then(()=>{window.location.reload();})
-    .catch(error => console.error('Error!', error.message))
-    }
-})
+});
+
+// Functions to show/hide loader
+function showLoader() {
+    document.getElementById('loader').style.display = 'block';
+}
+
+function hideLoader() {
+    document.getElementById('loader').style.display = 'none';
+}
+
 function validateInputs(){
     const usernameVal=username.value.trim();
     const cnameVal=cname.value.trim();
