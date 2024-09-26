@@ -211,7 +211,7 @@ function techTeamField() {
         createInputBox.name = "Tech_Team_Name";
         createInputBox.className = "form-control Name";
         createInputBox.id = "Tech_Team_Name";
-        createInputBox.placeholder = "Enter your team name for Technical event (Alphabets only Allowed)";
+        createInputBox.placeholder = "Enter your team name for Technical event(Alphabets only allowed)";
         createDiv.className = "error text-danger";
         createInputBox.minLength = 5;
         createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
@@ -247,11 +247,11 @@ function nonTechTeamField() {
         createInputBox.name = "Non_Tech_Team_Name";
         createInputBox.className = "form-control Name";
         createInputBox.id = "Non_Tech_Team_Name";
-        createInputBox.placeholder = "Enter your team name for Non-Technical event (Alphabets only Allowed)";
+        createInputBox.placeholder = "Enter team name for Non-Technical Event(Alphabets only allowed)";
         createDiv.className = "error text-danger";
         createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
         createInputBox.title="Team Name must only contain letters, spaces, or apostrophes.";
-        createInputBox.minLength = 5;
+        createInputBox.minLength = 4;
         createInputBox.required = true;
         nonTechParentEle.appendChild(createInputBox);
         nonTechParentEle.appendChild(createDiv);
