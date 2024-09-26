@@ -9257,7 +9257,7 @@ button:hover:after {
 
 .lgx-about-content,
 .lgx-about-content .section-btn-area {
-    text-align: left
+   text-align: left;
 }
 
 .lgx-about-content .section-btn-area .lgx-btn {
