@@ -236,7 +236,7 @@ function techTeamField() {
 function nonTechTeamField() {
     let y = document.getElementById('Non_Technical').value;
 
-    if ((y == 'Connection') || (y == 'Treasure_Hunt') || (y == 'As_you_like_it')) {
+    if ((y == 'Connection') || (y == 'Treasure_Hunt')) {
         let removeEle = document.querySelector('.nonTech');
         while (removeEle.hasChildNodes()) {
             removeEle.removeChild(removeEle.firstChild);
@@ -257,7 +257,30 @@ function nonTechTeamField() {
         nonTechParentEle.appendChild(createDiv);
       
     }
-   
+   else if(y == 'As_you_like_it'){
+    let removeEle = document.querySelector('.nonTech');
+        while (removeEle.hasChildNodes()) {
+            removeEle.removeChild(removeEle.firstChild);
+        }
+        let createPtag= document.createElement('p');
+        createPtag.innerHTML="Please enter your team name along with your event name Eg:(Dancing); if you're participating individually, type 'solo'. ";
+        createPtag.style="color:#f1a32d; font-weight: 600; font-size: 1.5rem; text-align:left;";
+        removeEle.append(createPtag);
+        let createInputBox = document.createElement('input');
+        let createDiv = document.createElement('div');
+        createInputBox.name = "Non_Tech_Team_Name";
+        createInputBox.className = "form-control Name";
+        createInputBox.id = "Non_Tech_Team_Name";
+        
+        createInputBox.placeholder = "Enter team name for Non-Technical Event(Alphabets only allowed)";
+        createDiv.className = "error text-danger";
+        createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
+        createInputBox.title="Team Name must only contain letters, spaces, or apostrophes.";
+        createInputBox.minLength = 4;
+        createInputBox.required = true;
+        nonTechParentEle.appendChild(createInputBox);
+        nonTechParentEle.appendChild(createDiv);
+   }
     else if ((y == 'None')) {
         let removeEle = document.querySelector('.nonTech');
         while (removeEle.hasChildNodes()) {
