@@ -270,12 +270,11 @@ function nonTechTeamField() {
         let createDiv = document.createElement('div');
         createInputBox.name = "Non_Tech_Team_Name";
         createInputBox.className = "form-control Name";
-        createInputBox.id = "Non_Tech_Team_Name";
-        
+        createInputBox.id = "Non_Tech_Team_Name";        
         createInputBox.placeholder = "Enter team name for Non-Technical Event(Alphabets only allowed)";
         createDiv.className = "error text-danger";
-        createInputBox.pattern= "^[A-Za-zÀ-ÿ' ]+$";
-        createInputBox.title="Team Name must only contain letters, spaces, or apostrophes.";
+        createInputBox.pattern= "^[A-Za-zÀ-ÿ'() ]+$";
+        createInputBox.title="Team Name must only contain letters, spaces, Brackets or apostrophes.";
         createInputBox.minLength = 4;
         createInputBox.required = true;
         nonTechParentEle.appendChild(createInputBox);
