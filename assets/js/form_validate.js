@@ -199,7 +199,7 @@ let nonTechParentEle = document.querySelector('.nonTech');
 function techTeamField() {
     let x = document.getElementById('Technical').value;
 
-    if (x == 'Quiz') {
+    if ((x == 'Quiz') || (x == 'Paper_presentation')) {
 
         let removeEle = document.querySelector('.tech');
         while (removeEle.hasChildNodes()) {
@@ -222,7 +222,7 @@ function techTeamField() {
         
         
     }
-    else if ((x == 'None') || (x == 'Debugging') || (x == 'Paper_presentation')) {
+    else if ((x == 'None') || (x == 'Debugging')) {
         let removeEle = document.querySelector('.tech');
         while (removeEle.hasChildNodes()) {
             removeEle.removeChild(removeEle.firstChild);
