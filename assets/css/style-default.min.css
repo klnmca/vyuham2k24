@@ -13342,14 +13342,14 @@ blockquote.lgx-testi-single:before {
     -moz-column-width: 22em;
     -webkit-column-width: 22em;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em
+    -webkit-column-gap: 1em;
 }
 
 .lgx-page-wrapper .lgx-col2 {
     -moz-column-width: 35em;
     -webkit-column-width: 35em;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em
+    -webkit-column-gap: 1em;
 }
 
 .lgx-page-wrapper .lgx-card-single,
