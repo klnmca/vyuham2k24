@@ -9,6 +9,7 @@ const tech = document.getElementById('Technical');
 const nontech = document.getElementById('Non_Technical');
 const tid = document.getElementById('Transaction_ID');
 const loader = document.getElementById('loader');
+const Batch_Year = document.getElementById('Batch_Year');
 //const tt = document.getElementById('Tech_Team_Name');
 // const ntt = document.getElementById('Non_Tech_Team_Name');
 
@@ -70,7 +71,7 @@ function validateInputs(){
     const techVal=tech.value.trim();
     const nontechVal=nontech.value.trim();
     const tidVal=tid.value.trim();
-
+    const BatchVal=Batch_Year.value.trim();
     //const ttVal = tt.value.trim();
     // const nontechteamVal = nonteam_team.value.trim();
 
@@ -125,7 +126,13 @@ function validateInputs(){
     else{
         setSuccess(dept);
     }
-
+    if(BatchVal===''){
+        success = false;
+        setError(Batch_Year,'Year is required');
+    }
+    else{
+        setSuccess(Batch_Year);
+    }
     if(techVal===''){
         success = false;
         setError(tech,'Technical events is required otherwise select None options');

@@ -712,7 +712,7 @@
 
             $('#lgx-typed-string').typed({
 
-                strings: ["Compete, Conquer, and Shine!", "Join us for Vyuham 2K24 ","an event especially for final-year students"],
+                strings: ["Compete, Conquer, and Shine!", "Join us for Vyuham 2K24 ","an event especially for UG students"],
 
                 // typing speed
 

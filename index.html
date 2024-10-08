@@ -134,6 +134,7 @@
                                             <div class="lgx-video-area">
                                                 <a class="lgx-btn lgx-btn-red lgx-scroll"
                                                     href="#lgx-registerinfo">Register Now</a>
+                                                    <h3 class="bus"> <img src="assets/img/bus.png" class="bus-img">Transport facility is available for Symposium participants</h3>
                                                     <h3 style="color: red;"><b>The Last Date for Registration is on or before 14/10/2024</b></h3>
                                             </div>
                                         </div>
@@ -192,7 +193,7 @@
                                     </div>
                                     <div class="lgx-about-content" style="text-align: justify;">
                                         <p class="text" >
-                                            We are pleased to announce that our MCA Department will be hosting the State-Level Technical Symposium, "VYUHAM 2K24," on 18<sup>th</sup> October 2024. This event aims to provide an excellent platform for undergraduate final year students from various academic institutions to exchange ideas, explore innovative concepts, and enhance their knowledge. We look forward to your participation and contribution to making this symposium a grand success!
+                                            We are pleased to announce that our MCA Department will be hosting the State-Level Technical Symposium, "VYUHAM 2K24," on 18<sup>th</sup> October 2024. This event aims to provide an excellent platform for undergraduate students from various academic institutions to exchange ideas, explore innovative concepts, and enhance their knowledge. We look forward to your participation and contribution to making this symposium a grand success!
                                         </p>
                                         <div class="section-btn-area">
                                             <a class="lgx-btn lgx-btn-red lgx-scroll"
@@ -705,7 +706,16 @@
                                 <input type="text" name="Department"  pattern="^[A-Za-zÀ-ÿ'. ,]+$" title="Department Name must only contain letters, spaces, or apostrophes." class="form-control Department" id="Department"  placeholder="Enter Your Department">
                                 <div class="error text-danger"></div>
                             </div>
-
+                            <div class="form-group">
+                                <select name="Batch_Year" class="form-control Batch_Year" id="Batch_Year"
+                                    onchange="nonTechTeamField()">
+                                    <option value="" selected disabled hidden>Select Year</option>
+                                    <option name="Batch_Year" value="III_Year">III Year</option>
+                                    <option name="Batch_Year" value="II_Year">II Year</option>
+                                    <option name="Batch_Year" value="I">I Year</option>
+                                </select>
+                                <div class="error text-danger"></div>
+                            </div>
                             <div class="form-group">
                                 <input type="email" name="Mail_Id" class="form-control Mail-Id" id="Mail-Id"
                                     placeholder="Enter email">
