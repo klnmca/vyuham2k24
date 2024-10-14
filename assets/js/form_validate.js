@@ -1,4 +1,5 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyHOhSV8j7i-RNE44GlsD_Ls2WRwk4KoYMO3vZRaWWGMQ-6h9TJMy4zI7rIF8M5tX5bjQ/exec';
+//const scriptURL = 'https://script.google.com/macros/s/AKfycbyHOhSV8j7i-RNE44GlsD_Ls2WRwk4KoYMO3vZRaWWGMQ-6h9TJMy4zI7rIF8M5tX5bjQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyZubP38IqjeXSJWz4racaHhiWigxIz7Lps8Sg4e2kwjUYXC_qhX3977ywWZQzU2MkY-g/exec';
 const form=document.getElementById('regForm');
 const username=document.getElementById('Name');
 const cname=document.getElementById('College_Name');
